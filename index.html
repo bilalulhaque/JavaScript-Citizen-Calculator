@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>  
+    <table>
+        <th>CITIZEN</th>
+        <tr>
+            <td colspan="4"> 
+                <input id="result" type="text">
+            </td>
+        </tr>
+        <tr class="buttons">
+            <td><button class="btn" onclick="getNumber('(')">(</button></td>
+            <td><button class="btn" onclick="getNumber(')')">)</button></td>
+            <td><button class="btn" onclick="getNumber('%')">mod</button></td>
+            <td><button class="btn" onclick="clearResult()">C</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button class="btn" onclick="getNumber('**3')">x<sup style="font-size: 14px;">3</sup></button></td>
+            <td><button class="btn" onclick="getNumber('**2')">x<sup style="font-size: 14px;">2</sup></button></td>
+            <td><button class="btn" onclick="getNumber('**(')">x<sup style="font-size: 14px;">y</sup></button></td>
+            <td><button class="btn" onclick="getNumber('Math.sqrt(')">&#8730;</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button class="btn" onclick="getNumber('7')">7</button></td>
+            <td><button class="btn" onclick="getNumber('8')">8</button></td>
+            <td><button class="btn" onclick="getNumber('9')">9</button></td>
+            <td><button class="btn" onclick="getNumber('/')">/</button></td>
+            
+        </tr>
+        <tr class="buttons">
+            <td><button class="btn" onclick="getNumber('4')">4</button></td>
+            <td><button class="btn" onclick="getNumber('5')">5</button></td>
+            <td><button class="btn" onclick="getNumber('6')">6</button></td>
+            <td><button class="btn" onclick="getNumber('*')">x</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button class="btn" onclick="getNumber('1')">1</button></td>
+            <td><button class="btn" onclick="getNumber('2')">2</button></td>
+            <td><button class="btn" onclick="getNumber('3')">3</button></td>
+            <td><button class="btn" onclick="getNumber('-')">-</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button class="btn" onclick="getNumber('.')">.</button></td>
+            <td><button class="btn" onclick="getNumber('0')">0</button></td>
+            <td><button class="btn" onclick="getNumber('Math.log(')">log</button></td>
+            <td><button class="btn" onclick="getNumber('+')">+</button></td>
+        </tr>
+        <tr class="buttons">
+            <td><button id="largeButton" onclick="getResult()">=</button></td>
+        </tr>
+    </table>
+</body>
+
+<script src="app.js"></script>
+</html>

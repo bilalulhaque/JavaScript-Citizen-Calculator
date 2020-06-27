@@ -1,0 +1,101 @@
+table{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 100px;
+    width: 520px;
+
+}
+#result{
+    width: 500px;
+    height: 65px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+
+}
+.btn{
+    width: 120px;
+    height: 70px;
+    font-size: 25px;
+    border: 0px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+tr{
+    padding: 4px;
+}
+
+.btn:hover,#largeBtn:hover{
+    background-color: #C0C0C0;
+    border:1px solid #808080;
+
+
+}
+#largeButton{
+    width:500px;
+    height: 70px;
+    font-size: 30px;
+    border: 0px;
+    background-color:#7ba7cc;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#largeButton:hover{
+    background-color: steelblue;
+    border: 1px solid #38678f;
+}
+th{
+    font-size: 40px;
+    color: #38678f;
+    font-weight: 500;
+    padding-bottom: 30px;
+    
+}
+
+#equals{
+    width: 120px;
+    height: 70px;
+    font-size: 25px;
+    border: 0px;
+    background-color:#7ba7cc;
+}
+#equals:hover{
+    background-color: steelblue;
+    border: 1px solid #38678f;
+}
+
+body{
+    background-image: url(image.jpg);
+}
+
+
+@media only screen and (max-width: 600px){
+    table,#largeButton,#result{
+        width: 400px;
+    }
+    .btn{
+        width: 80px;
+    }
+}
+@media only screen and (max-width:448px){
+    table,#largeButton,#result{
+        width: 290px;
+    }
+    .btn{
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width:342px){
+    table,#largeButton,#result{
+        width: 230px;
+    }
+    .btn{
+        width: 30px;
+    }
+}
